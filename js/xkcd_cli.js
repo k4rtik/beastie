@@ -153,7 +153,7 @@ TerminalShell.filters.push(function (terminal, cmd) {
 
 TerminalShell.commands['shutdown'] = TerminalShell.commands['poweroff'] = function(terminal) {
 	if (this.sudo) {
-		terminal.print('Broadcast message from guest@xkcd');
+		terminal.print('Broadcast message from guest@tathva2011');
 		terminal.print();
 		terminal.print('The system is going down for maintenance NOW!');
 		return $('#screen').fadeOut();
@@ -188,64 +188,65 @@ function linkFile(url) {
 
 Filesystem = {
 	'welcome.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('Welcome to the tux of war contest console.'));
+		terminal.print($('<h3>').text('Welcome to Tux of War contest console'));
 		/*terminal.print('To navigate the questions, enter "next", "prev", "first", "last", "display", or "random".');*/
-		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
-		terminal.print($('<h3>').text('Attention Linux afficionados!.'));
-		terminal.print('From basic GNU/Linux know-how to advanced shell scripting, it\'s all here.');
-		terminal.print('So grab your thinking hats, and get ready to battle it out in Tux of War.');
+		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem. Ctrl + L to clear.');
+		terminal.print($('<h3>').text('Attention Linux afficionados!'));
+		//terminal.print('From basic GNU/Linux know-how to advanced shell scripting, it\'s all here.');
+		//terminal.print('So grab your thinking hats, and get ready to battle it out in Tux of War.');
+		terminal.print('Battle it out with Tux this Tathva!');
 	}},
-	'dateandtime.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('Date and time of the event is as follows.'));
+	'datetime.txt': {type:'file', read:function(terminal) {
+		terminal.print($('<h3>').text('Date and Time'));
 		terminal.print('Monday October 10, 2011.');
 		terminal.print('9pm to 11pm.');
 	}},
 	'prizes.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('The content winners will be awarded with the following prizes.'));
-		terminal.print('First Rs. 3500/-');
+		terminal.print($('<h3>').text('The best Tux Warriors will be awarded with prizes'));
+		terminal.print('First  Rs. 3500/-');
 		terminal.print('Second Rs. 2000/-');
-		terminal.print('Third Rs. 1500/-');
+		terminal.print('Third  Rs. 1500/-');
 	}},
 	'rules.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('Rules of tux of war contest'));
-		terminal.print('Maximum two participants per team.');
-		terminal.print('Any number of teams are allowed from a college. However the members of a team must be from the same college.');
-		terminal.print('There will be a maximum of three rounds.');
-		terminal.print('The first round will be an online qualifying round from which a maximum of 10 teams will be shortlisted.');
-		terminal.print('The final 2 rounds will be conducted at NITC campus during Tathva. Consisting of a debugging/sysadmin round (including, but not limited to, common linux hassles/problems, system environment editing, etc.) and a bash scripting round, these will test the participant\'s practical skills in a Linux environment.');
-		terminal.print('Marks from first round will not be carried over to the other two rounds.');
-		terminal.print('However marks from Round 2 will be carried over to Round 3 i.e. winning teams will be decided on the basis of performance in the last two rounds.');
-		terminal.print('The co-ordinator\'s decision shall be final.');
+		terminal.print($('<h3>').text('Contest Rules'));
+		terminal.print(' - Maximum two participants per team.');
+		terminal.print(' - Any number of teams are allowed from a college. However the members of a team must be from the same college.');
+		terminal.print(' - There will be a maximum of three rounds.');
+		terminal.print(' - The first round will be an online qualifying round from which a maximum of 10 teams will be shortlisted.');
+		terminal.print(' - The final 2 rounds will be conducted at NITC campus during Tathva. Consisting of a debugging/sysadmin round (including, but not limited to, common linux hassles/problems, system environment editing, etc.) and a bash scripting round, these will test the participant\'s practical skills in a Linux environment.');
+		terminal.print(' - Marks from first round will not be carried over to the other two rounds.');
+		terminal.print(' - However marks from Round 2 will be carried over to Round 3 i.e. winning teams will be decided on the basis of performance in the last two rounds.');
+		terminal.print(' - The co-ordinator\'s decision shall be final.');
 	}},
 	'contestdetails.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Contest Details'));
 		terminal.print($('<h4>').text('Round 1 - Preliminary'));
-		terminal.print('This will be an online round.');
-		terminal.print('Questions will consist of MCQs and one-liners based on UNIX/Linux commands, tools, concepts and philosophy.');
-		terminal.print('Duration will be 30 minutes.');
-		terminal.print('This will be an elimination round and only the qualifying teams will appear for next 2 rounds.');
+		terminal.print(' - This will be an online round.');
+		terminal.print(' - Questions will consist of MCQs and one-liners based on UNIX/Linux commands, tools, concepts and philosophy.');
+		terminal.print(' - Duration will be 30 minutes.');
+		terminal.print(' - This will be an elimination round and only the qualifying teams will appear for next 2 rounds.');
 		terminal.print($('<h4>').text('Round 2 - Sysadmin Round'));
-		terminal.print('This will be an onsite round during Tathva');
-		terminal.print('Involving practical linux hassles/problems on Debian/Redhat based systems');
-		terminal.print('One system per team');
-		terminal.print('Duration will be 90 minutes');
-		terminal.print('Marks will be given for documentation too');
-		terminal.print('Boot CD/USB will be available on request');
-		terminal.print('No Internet access');
+		terminal.print(' - This will be an onsite round during Tathva');
+		terminal.print(' - Involving practical linux hassles/problems on Debian/Redhat based systems');
+		terminal.print(' - One system per team');
+		terminal.print(' - Duration will be 90 minutes');
+		terminal.print(' - Marks will be given for documentation too');
+		terminal.print(' - Boot CD/USB will be available on request');
+		terminal.print(' - No Internet access');
 		terminal.print($('<h4>').text('Round 3 - Scripting Round'));
-		terminal.print('This will also be an onsite round during Tathva');
-		terminal.print('Involving writing bash scripts for general shell usage, administration related tasks, networking, etc.');
-		terminal.print('One system per team');
-		terminal.print('Duration 3 hours');
-		terminal.print('Marks for elegance, covering more input cases, optimization');
+		terminal.print(' - This will also be an onsite round during Tathva');
+		terminal.print(' - Involving writing bash scripts for general shell usage, administration related tasks, networking, etc.');
+		terminal.print(' - One system per team');
+		terminal.print(' - Duration 3 hours');
+		terminal.print(' - Marks for elegance, covering more input cases, optimization');
 		terminal.print('<p>Final winners will be decided on the basis of performance in last two rounds.</p>');
 	}},
 	'reginfo.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Registration Info'));
-		terminal.print('Both members of the team have to register on the Tathva Site [http://tathva.org/2011/#!register] to receive individual Tathva IDs. The team captain should use a Google account for registration, this will be required for logging into the contest portal.');
-		terminal.print('Then, the team captain has to register for Tux of War using Event Registration page at Tathva site [http://tathva.org/2011/index.php#!eventregister] specifying the partners tathva ID to obtain a team ID.');
-		terminal.print('Only teams with a valid Team ID are allowed to participate in the contest.');
-		terminal.print('When the first round is started the team captain should use his/her Google account to participate. The other team mate can help him/her, but need not attempt the first round individually.');
+		terminal.print(' - Both members of the team have to register on the Tathva Site [http://tathva.org/2011/#!register] to receive individual Tathva IDs. The team captain should use a Google account for registration, this will be required for logging into the contest portal.');
+		terminal.print(' - Then, the team captain has to register for Tux of War using Event Registration page at Tathva site [http://tathva.org/2011/index.php#!eventregister] specifying the partners tathva ID to obtain a team ID.');
+		terminal.print(' - Only teams with a valid Team ID are allowed to participate in the contest.');
+		terminal.print(' - When the first round is started the team captain should use his/her Google account to participate. The other team mate can help him/her, but need not attempt the first round individually.');
 	}},
 	'resources.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Resources.'));
@@ -255,13 +256,14 @@ Filesystem = {
 		terminal.print('some linux tutorials');
 	}},
 	'contacts.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('Contact Information.'));
+		terminal.print($('<h3>').text('Contact Info'));
 		terminal.print('Kartik Singhal');
-		terminal.print('Phone: +91 974 688 7377');
-		terminal.print('E-mail: kartik@tathva.org');
+		terminal.print(' Phone: +91 974 688 7377');
+		terminal.print(' E-mail: kartik@tathva.org');
+		terminal.print('\n');
 		terminal.print('Abhishek Gupta');
-		terminal.print('Phone: +91 963 325 0636');
-		terminal.print('Email: @tathva.org');
+		terminal.print(' Phone: +91 963 325 0636');
+		terminal.print(' Email: @tathva.org');
 	}},
 	'license.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<p>').html('Client-side logic for Wordpress CLI theme :: <a href="http://thrind.xamai.ca/">R. McFarland, 2006, 2007, 2008</a>'));
