@@ -191,10 +191,10 @@ Filesystem = {
 		terminal.print($('<h3>').text('Welcome to Tux of War contest console'));
 		/*terminal.print('To navigate the questions, enter "next", "prev", "first", "last", "display", or "random".');*/
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem. Ctrl + L to clear.');
-		terminal.print($('<h3>').text('Attention Linux afficionados!'));
+		//terminal.print($('<h3>').text('Attention Linux afficionados!'));
 		//terminal.print('From basic GNU/Linux know-how to advanced shell scripting, it\'s all here.');
 		//terminal.print('So grab your thinking hats, and get ready to battle it out in Tux of War.');
-		terminal.print('Battle it out with Tux this Tathva!');
+		terminal.print($('<h3>').text('Battle it out with Tux this Tathva!'));
 	}},
 	'datetime.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Date and Time'));
