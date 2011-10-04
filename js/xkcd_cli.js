@@ -22,7 +22,7 @@ var xkcd = {
 	
 	get: function(num, success, error) {
 		if (num == null) {
-			path = '1';
+			path = '46'; // Last question
 		} else if (Number(num)) {
 			path = String(num);
 		} else {
