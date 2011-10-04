@@ -199,7 +199,7 @@ Filesystem = {
 	'datetime.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Date and Time'));
 		terminal.print('Monday October 10, 2011.');
-		terminal.print('9pm to 11pm.');
+		terminal.print('10pm to 11pm.');
 	}},
 	'prizes.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('The best Tux Warriors will be awarded with prizes'));
