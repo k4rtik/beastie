@@ -597,7 +597,7 @@ $(document).ready(function() {
 				$('#screen').one('cli-ready', function(e) {
 					Terminal.runCommand('cat welcome.txt');
 				});
-				Terminal.runCommand('display '+xkcd.latest.num+'/'+pathFilename(xkcd.latest.img));
+				Terminal.runCommand('display ' + xkcd.latest.num);
 			} else {
 				noData();
 			}
