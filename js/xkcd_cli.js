@@ -18,7 +18,7 @@ var xkcd = {
 	latest: null,
 	last: null,
 	cache: {},
-	base: 'http://dynamic.xkcd.com/api-0/jsonp/comic/',
+	base: '/beastie/contest/questions/',
 	
 	get: function(num, success, error) {
 		if (num == null) {
@@ -36,7 +36,7 @@ var xkcd = {
 		} else {
 			return $.ajax({
 				url: this.base+path,
-				dataType: 'jsonp',
+				dataType: 'json',
 				success: $.proxy(function(data) {
 					this.last = this.cache[num] = data;
 					success(data);
