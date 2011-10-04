@@ -263,7 +263,7 @@ Filesystem = {
 		terminal.print('\n');
 		terminal.print('Abhishek Gupta');
 		terminal.print(' Phone: +91 963 325 0636');
-		terminal.print(' Email: @tathva.org');
+		terminal.print(' Email: abhishek@tathva.org');
 	}},
 	'license.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<p>').html('Client-side logic for Wordpress CLI theme :: <a href="http://thrind.xamai.ca/">R. McFarland, 2006, 2007, 2008</a>'));
