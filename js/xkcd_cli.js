@@ -18,11 +18,11 @@ var xkcd = {
 	latest: null,
 	last: null,
 	cache: {},
-	base: 'http://dynamic.xkcd.com/api-0/jsonp/comic/',
+	base: '/beastie/contest/questions/',
 	
 	get: function(num, success, error) {
 		if (num == null) {
-			path = '';
+			path = '46'; // Last question
 		} else if (Number(num)) {
 			path = String(num);
 		} else {
@@ -36,7 +36,7 @@ var xkcd = {
 		} else {
 			return $.ajax({
 				url: this.base+path,
-				dataType: 'jsonp',
+				dataType: 'json',
 				success: $.proxy(function(data) {
 					this.last = this.cache[num] = data;
 					success(data);
@@ -597,7 +597,7 @@ $(document).ready(function() {
 				$('#screen').one('cli-ready', function(e) {
 					Terminal.runCommand('cat welcome.txt');
 				});
-				Terminal.runCommand('display '+xkcd.latest.num+'/'+pathFilename(xkcd.latest.img));
+				Terminal.runCommand('display ' + xkcd.latest.num);
 			} else {
 				noData();
 			}
