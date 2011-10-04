@@ -248,13 +248,13 @@ Filesystem = {
 		terminal.print(' - Only teams with a valid Team ID are allowed to participate in the contest.');
 		terminal.print(' - When the first round is started the team captain should use his/her Google account to participate. The other team mate can help him/her, but need not attempt the first round individually.');
 	}},
-	'resources.txt': {type:'file', read:function(terminal) {
+	/*'resources.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Resources.'));
 		terminal.print('Links to various tutorials, pages, etc.');
 		terminal.print('philosophy - FSF');
 		terminal.print('scripting - tldp.org absg');
 		terminal.print('some linux tutorials');
-	}},
+	}},*/
 	'contacts.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Contact Info'));
 		terminal.print('Kartik Singhal');
