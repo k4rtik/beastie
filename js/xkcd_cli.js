@@ -191,13 +191,11 @@ Filesystem = {
 		terminal.print($('<h3>').text('Welcome to the tux of war contest console.'));
 		/*terminal.print('To navigate the questions, enter "next", "prev", "first", "last", "display", or "random".');*/
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
-	}},
-	'home.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Attention Linux afficionados!.'));
 		terminal.print('From basic GNU/Linux know-how to advanced shell scripting, it\'s all here.');
 		terminal.print('So grab your thinking hats, and get ready to battle it out in Tux of War.');
 	}},
-	'dateAndTime.txt': {type:'file', read:function(terminal) {
+	'dateandtime.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Date and time of the event is as follows.'));
 		terminal.print('Monday October 10, 2011.');
 		terminal.print('9pm to 11pm.');
@@ -208,7 +206,7 @@ Filesystem = {
 		terminal.print('Second Rs. 2000/-');
 		terminal.print('Third Rs. 1500/-');
 	}},
-	'Rules.txt': {type:'file', read:function(terminal) {
+	'rules.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Rules of tux of war contest'));
 		terminal.print('Maximum two participants per team.');
 		terminal.print('Any number of teams are allowed from a college. However the members of a team must be from the same college.');
@@ -219,7 +217,7 @@ Filesystem = {
 		terminal.print('However marks from Round 2 will be carried over to Round 3 i.e. winning teams will be decided on the basis of performance in the last two rounds.');
 		terminal.print('The co-ordinator\'s decision shall be final.');
 	}},
-	'contestDetails.txt': {type:'file', read:function(terminal) {
+	'contestdetails.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Contest Details'));
 		terminal.print($('<h4>').text('Round 1 - Preliminary'));
 		terminal.print('This will be an online round.');
@@ -242,7 +240,7 @@ Filesystem = {
 		terminal.print('Marks for elegance, covering more input cases, optimization');
 		terminal.print('<p>Final winners will be decided on the basis of performance in last two rounds.</p>');
 	}},
-	'RegInfo.txt': {type:'file', read:function(terminal) {
+	'reginfo.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Registration Info'));
 		terminal.print('Both members of the team have to register on the Tathva Site [http://tathva.org/2011/#!register] to receive individual Tathva IDs. The team captain should use a Google account for registration, this will be required for logging into the contest portal.');
 		terminal.print('Then, the team captain has to register for Tux of War using Event Registration page at Tathva site [http://tathva.org/2011/index.php#!eventregister] specifying the partners tathva ID to obtain a team ID.');
@@ -264,11 +262,6 @@ Filesystem = {
 		terminal.print('Abhishek Gupta');
 		terminal.print('Phone: +91 963 325 0636');
 		terminal.print('Email: @tathva.org');
-	}},
-	'welcome.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h3>').text('Welcome to the tux of war contest console.'));
-		terminal.print('To navigate the questions, enter "next", "prev", "first", "last", "display", or "random".');
-		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
 	}},
 	'license.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<p>').html('Client-side logic for Wordpress CLI theme :: <a href="http://thrind.xamai.ca/">R. McFarland, 2006, 2007, 2008</a>'));
