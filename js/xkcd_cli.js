@@ -188,8 +188,8 @@ function linkFile(url) {
 
 Filesystem = {
 	'welcome.txt': {type:'file', read:function(terminal) {
-		terminal.print($('<h4>').text('Welcome to the unixkcd console.'));
-		terminal.print('To navigate the comics, enter "next", "prev", "first", "last", "display", or "random".');
+		terminal.print($('<h4>').text('Welcome to the tux of war contest console.'));
+		terminal.print('To navigate the questions, enter "next", "prev", "first", "last", "display", or "random".');
 		terminal.print('Use "ls", "cat", and "cd" to navigate the filesystem.');
 	}},
 	'license.txt': {type:'file', read:function(terminal) {
