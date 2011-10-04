@@ -667,17 +667,7 @@ $(document).ready(function() {
 		Terminal.promptActive = true;
 	}
 	$('#screen').bind('cli-load', function(e) {
-		xkcd.get(null, function(data) {
-			if (data) {
-				xkcd.latest = data;
-				$('#screen').one('cli-ready', function(e) {
-					Terminal.runCommand('cat welcome.txt');
-				});
-				Terminal.runCommand('display ' + xkcd.latest.num);
-			} else {
-				noData();
-			}
-		}, noData);
+		Terminal.runCommand('cat welcome.txt');
 	});
 	
 	$(document).konami(function(){
