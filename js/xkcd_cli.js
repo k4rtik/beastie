@@ -239,7 +239,7 @@ Filesystem = {
 		terminal.print(' - One system per team');
 		terminal.print(' - Duration 3 hours');
 		terminal.print(' - Marks for elegance, covering more input cases, optimization');
-		terminal.print('<p>Final winners will be decided on the basis of performance in last two rounds.</p>');
+		terminal.print($('<p>').html('Final winners will be decided on the basis of performance in last two rounds.'));
 	}},
 	'reginfo.txt': {type:'file', read:function(terminal) {
 		terminal.print($('<h3>').text('Registration Info'));
